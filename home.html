@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queen's Kitchen</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="CreateTableFromJSON()">
+  <!-- <input type="button" value="Generate a table" onclick="generate_table()"> -->
+
+  <div class="container">
+    <div class="menu">
+      <h2 class="menu-group-heading">
+        Hot Deals
+      </h2>
+      <p>Click to Sort </p>
+      <table id="r_table" class="margin-auto">
+        <thead>
+          <tr>
+            <th>Restaurant</th>
+            <th onclick="sortTable(0)">Price for Two</th>
+            <th onclick="sortTable(1)">Distance</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableData">
+
+        </tbody>
+      </table>
+      
+      <!-- <div class="menu-group">        
+        <div class="menu-item" id="restaurantID">
+          <img class="menu-item-image" src="static/pp.jpg" alt="KFC">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name" id="restaurantName">Paneer Punjabi</span>
+              <span class="menu-item-price" id="priceForTwo">₹300</span>
+            </h3>
+            <p class="menu-item-description" id="distance">Distance from your location</p>
+          </div>
+        </div>
+
+        </div>
+      </div> -->
+  </div>
+
+  <div class="container">
+    <div class="menu">
+      <h2 class="menu-group-heading">
+         Top Restaurants Near Me!
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="static/kfc.png" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name" id="r_name">KFC</span>
+              <span class="menu-item-price" id="price_for_two">₹700 For two</span>
+            </h3>
+            <p class="menu-item-description">
+              Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+              congue eu mauris nec, pretium tincidunt nulla.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="static/bbqn.png" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">BBQ Nation</span>
+              <span class="menu-item-price">₹1800 For two</span>
+            </h3>
+            <p class="menu-item-description">
+              Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+              congue eu mauris nec, pretium tincidunt nulla.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="static/bbqn.png" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">BBQ Nation</span>
+              <span class="menu-item-price">₹1800 For two</span>
+            </h3>
+            <p class="menu-item-description">
+              Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+              congue eu mauris nec, pretium tincidunt nulla.
+            </p>
+          </div>
+        </div>        
+      </div>
+
+      <h2 class="menu-group-heading">
+        Trending Items
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image" src="static/pp.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Paneer Punjabi</span>
+              <span class="menu-item-price">₹300</span>
+            </h3>
+            <p class="menu-item-description">
+              Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+              congue eu mauris nec, pretium tincidunt nulla.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="static/ck.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chicken Tikka</span>
+              <span class="menu-item-price">₹450</span>
+            </h3>
+            <p class="menu-item-description">
+              Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+              congue eu mauris nec, pretium tincidunt nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="home.js"></script>    
+</body>
+
+</html>

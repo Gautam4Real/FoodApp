@@ -1,0 +1,10 @@
+data = `[
+    {"r_id": "1", "r_name" : "Thai Me Up","distance": "3", "price_for_two": "250"},
+    {"r_id": "2", "r_name" : "My Sweet Spot", "distance": "5", "price_for_two": "450"}, 
+    {"r_id": "3", "r_name" : "BBC Nation", "distance": "7", "price_for_two": "650"}, 
+    {"r_id": "4", "r_name" : "Chick-Fill-A", "distance": "9", "price_for_two": "850"},
+    {"r_id": "5", "r_name" : "Hooters", "distance": "11", "price_for_two": "1500"}
+]`;
+
+
+// data = '[{"r_id": "1", "r_name": "Thai Me Up","distance": "3", "price_for_two": "250"},{"r_id": "2", "r_name": "My Sweet Spot", "distance": "5", "price_for_two": "350"}, {"r_id": "3", "r_name" : "BBC Nation", "distance": "7", "price_for_two": "150"}, {"r_id": "4", "r_name" : "Chick-Fill-A", "distance": "9", "price_for_two": "950"}]';
